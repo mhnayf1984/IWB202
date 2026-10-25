@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>الرئيسية</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <form action="" onsubmit="submitForm(event)">
+      <input type="text" id="full_name" onchange="checkFullName()" />
+      <small id="error_full_name"></small>
+      <input
+        type="text"
+        id="national_id_number"
+        onchange="checkNationalIdNumber()"
+      />
+      <small id="error_national_id_number"></small>
+
+      <input type="date" id="start_date" />
+      <input type="date" id="end_date" onchange="checkEndDate()" />
+      <small id="error_end_date"></small>
+
+      <input type="number" id="mobile" />
+      <small id="error_mobile"></small>
+
+      <input type="email" id="email" />
+      <input type="submit" value="ارسال" />
+      <input type="reset" value="reset" />
+    </form>
+
+    <!-- jqury -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script src="js/myFunctions.js"></script>
+  </body>
+</html>
